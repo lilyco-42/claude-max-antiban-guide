@@ -12,6 +12,7 @@
 | **Claude (Anthropic)** | $20/月 (Pro) | Max 5x $100 / Max 20x $200 | **Opus 5.5** · Fable 5.1 · Sonnet 5 · Haiku 4.5 | Pro 5× / Max 5×–20× | 含 Claude Code CLI |
 | **阿里云百炼** | ¥39/月 (Lite) | Standard ¥139 / Pro ¥499 | Qwen3.8-Max (0902) · Qwen3.8-Flash · Kimi-K3 · Deepseek-v4-pro | 11,500–180,000 Credits/月 | 12 项 Harness 权益 |
 | **OpenCode Go** | $10/月 | 单档 | GPT-6 Luna · DeepSeek V4.1 Flash · Kimi K3 · GLM-5.3-Flash · MiMo-V2.6-Flash · MiniMax M3 | 5h $12 / 周 $30 / 月 $60 | 32 款模型，6× 用量 |
+| **Factory** | $20/月 (Pro) | Plus $100 / Max $200 | 模型中立聚合：**Claude Opus 5.5** · Fable 5.1 · **GPT-6 Astra/Sol/Luna** · Gemini 3.x · Grok 4.x · GLM-5.3 · Kimi K3 · Qwen3.8 · DeepSeek V4.1 | 3 个滚动窗口（5h / 7d / 30d）+ Droid Core 免费池 | 含 Droid CLI / SDK |
 | **智谱 GLM** | ¥118/月 (Lite) | Pro ¥538 / Max ¥1078 | GLM-5.3 · GLM-5.3-Flash | 5h 2000/12000/28000 · 周 10K/60K/140K 积分 | 支持 20+ 工具 |
 | **MiniMax** | ¥49/月 (Plus) | Max ¥119 / Ultra ¥469 | MiniMax M3 · M2.7 · H3 · Speech 2.8 | 6亿–71亿+ token/月 | 全模态共享额度 |
 | **Kimi** | ¥99/月 (Plus) | Pro ¥199 / Max ¥699 | Kimi K3 (2.8T / 1M) · K2.8 Preview · K2.7 Code 高速版 | 5h 滚动窗口（取消周限额） | Go ¥49 不含编程额度 |
@@ -50,6 +51,25 @@
 
 - **GPT-6 Astra**：API 价 $10/$50（MTok），1.05M 上下文，128K 输出，知识截止 2026-04。
 - **GPT-6 Luna**：API 价 $0.10/$0.50（MTok），高性价比。
+
+### Factory（factory.ai）—— 模型中立聚合平台
+
+Factory 是一个 agentic coding 平台（类似 Claude Code / Codex），提供 Factory App、Droid CLI、Droid SDK，**不绑定单一厂商**，可按倍率混用各家模型，并通过自研 Router 调度。
+
+| 档位 | 价格 | 说明 |
+| --- | --- | --- |
+| Pro | $20/月 | Factory App / Droid CLI / Droid SDK；云端与本地后台代理；用量与计费仪表盘 |
+| Plus | $100/月 | 含 Pro 全部；约 **5× Pro 用量**；远程运行的受管 Droid Computers |
+| Max | $200/月 | 含 Plus 全部；约 **10× Pro 用量**；大批量工作的早期功能访问 |
+
+- **额度口径**：三个独立滚动窗口（**5 小时 / 7 天 / 30 天**）；标准用量先用；用尽后进入 **Droid Core**（免费开放权重模型池，独立限速）；可用 **Extra Usage** 预付额度（最低 $10、永不过期）补充。
+- **BYOK**：全部个人套餐自带设备免费到一定额度，超出后按套餐计费；Missions 与常规会话共享滚动限速。
+- **模型目录（含倍率）**：
+  - Anthropic：**Claude Opus 5.5**（1.6×）、Opus 5（2×）、Fable 5.1（4×）、Sonnet 5.5/5（0.8×）、Haiku 4.5（0.4×）；
+  - OpenAI：**GPT-6 Astra**（4×）、GPT-6 Sol（0.8×）、**GPT-6 Luna**（0.04×）、GPT-5.6 Sol（1.6× 促销至 11-22）；
+  - Google：Gemini 3.1 Pro（0.8×）、Gemini 3.8/3.7 Flash（0.3× 促销至 2027-01-01）；
+  - xAI：Grok 4.7/4.6/4.5（0.8×）；
+  - 开放模型（Droid Core）：GLM-5.3（0.56×）、GLM-5.3-Flash（0.06×）、Kimi K3（1.2×）、Qwen3.8 Max（0.8×）、DeepSeek V4.1 Flash（0.12×）、MiniMax M3（0.12×）、Mistral Medium 3.5 等。
 
 ---
 
@@ -125,6 +145,7 @@
 - **团队 / 并发**：Kimi Max、智谱 GLM Pro/Max、阿里云百炼 Pro 各有侧重，按 Agent 并发与上下文需求选择。
 - **国内轻量入门**：MiniMax Plus（¥49）、阿里云百炼 Lite（¥39）、火山方舟 Lite（首购 ¥9.9）门槛最低。
 - **模型多样性**：火山引擎方舟、OpenCode Go 覆盖多家开源/旗舰模型。
+- **单一平台混用多模型**：Factory（$20–200）模型中立，可按倍率混用 Opus 5.5、GPT-6、Gemini、Grok 及开放模型，并含 Droid CLI/SDK。
 - **无周限额刚需**：小米 MiMo 全档无周/5h 限额。
 
 **通用提示**：一次提问常触发 5–30 次模型调用；先估算月消耗再选档位，避免买高或买低。已激活订阅多数不支持退款。
@@ -134,8 +155,8 @@
 ## 五、数据来源与时效说明
 
 - 本表整理于 **2026-10-04**，主要依据各平台官方定价页，并参考 codingplan.org（2026-09 更新）做交叉核对。
-- 相比 8 月的老版对比，本表**新增 GPT-6 系列（OpenAI）与 Opus 5.5（Anthropic）**，并更新了 Kimi 新会员体系、智谱 GLM 连续包月价、火山方舟活动价、小米 MiMo V2.6 等最新变动。
-- 主要来源：claude.com / platform.claude.com、openai.com / help.openai.com、bigmodel.cn、kimi.com、volcengine.com、codingplan.org。
+- 相比 8 月的老版对比，本表**新增 GPT-6 系列（OpenAI）与 Opus 5.5（Anthropic）**，并更新了 Kimi 新会员体系、智谱 GLM 连续包月价、火山方舟活动价、小米 MiMo V2.6 等最新变动；**2026-10 追加 Factory（factory.ai）** 个人套餐与模型目录。
+- 主要来源：claude.com / platform.claude.com、openai.com / help.openai.com、bigmodel.cn、kimi.com、volcengine.com、docs.factory.com、codingplan.org。
 
 ## 免责声明
 

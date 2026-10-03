@@ -125,7 +125,7 @@
 
 | 资源 | 说明 | 时效提示 |
 | --- | --- | --- |
-| [coding-plan-对比.md](./coding-plan-对比.md) | **本仓库自维护的更新版**各厂商 Coding Plan 对比（2026-10），已补入 **GPT-6 系列**与 **Claude Opus 5.5**，并更新 Kimi 新会员体系、智谱 GLM、火山方舟、小米 MiMo 等最新档位 | 整理于 **2026-10-04**；购买前仍以官方页面为准 |
+| [coding-plan-对比.md](./coding-plan-对比.md) | **本仓库自维护的更新版**各厂商 Coding Plan 对比（2026-10），已补入 **GPT-6 系列**、**Claude Opus 5.5** 与 **Factory**，并更新 Kimi 新会员体系、智谱 GLM、火山方舟、小米 MiMo 等最新档位 | 整理于 **2026-10-04**；购买前仍以官方页面为准 |
 | [mahonzhan/awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan) | 外部参考：各大模型/云厂商 **Coding Plan 实际价值对比**（含额度倍率测算与选购建议） | 原仓库内容更新至 **2026-09**，不含 GPT-6 / Opus 5.5；价格变动频繁，以官方页面为准 |
 
 ---
